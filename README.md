@@ -27,3 +27,4 @@ MAIL_FROM_NAME="${APP_NAME}"
 - Fiz o simples, arquiteturas complexas com mais camadas e abstrações eram desnecessárias para esse pequeno projeto. Optei apenas por utilizar o mais básico: Model, Controller e Middleware. Esse foi um dos motivos por não usar Policies, meu middlware tinha uma regra tão simples para uma aplicação tão pequena, que preferi apenas criar uma classe `OwnerCheckMiddleware` e bala!
 
 - O insomnia com as rotas está disponibilizado na raíz do projeto
+- Para que o serviço de email seja colocado numa fila, não se esqueça de abrir um segundo terminal e rodar: `php artisan queue:work`
